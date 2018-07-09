@@ -10,8 +10,8 @@ else:
 	os.mkdir(".backup")
 
 if len(sys.argv) != 4:
-	print("\nUSAGE:\n\t=== To Encrypt ===\n\n\t\tpython3 hound.py -e [username] {folder}")
-	print("\n\t=== To Decrypt ===\n\n\t\tpython3 hound.py -d [output] {file_encrypted}\n")
+	print("\nUSAGE:\n\t=== To Encrypt ===\n\n\t\tpython3 code1.py -e [username] {folder}")
+	print("\n\t=== To Decrypt ===\n\n\t\tpython3 code1.py -d [output] {file_encrypted}\n")
 	sys.exit(2)
 elif sys.argv[1] == "-e" and not sys.argv[2] is None and os.path.isdir(sys.argv[3]) == True and not sys.argv[3] is None:
 	folder = sys.argv[3].replace('/', '')
@@ -30,7 +30,7 @@ elif sys.argv[1] == "-d" and not sys.argv[2] is None and os.path.isfile(sys.argv
 	os.system('sudo rm -r {}.tar.gz'.format(sys.argv[2]))
 	sys.exit(0)
 else:
-	print("\nUSAGE:\n\t=== To Encrypt ===\n\n\t\tpython3 hound.py -e [username] {folder}")
-	print("\n\t=== To Decrypt ===\n\n\t\tpython3 hound.py -d [output] {file_encrypted}\n")
+	print("\nUSAGE:\n\t=== To Encrypt ===\n\n\t\tpython3 code1.py -e [username] {folder}")
+	print("\n\t=== To Decrypt ===\n\n\t\tpython3 code1.py -d [output] {file_encrypted}\n")
 	sys.exit(2)
 
